@@ -1,0 +1,33 @@
+#VRML V2.0 utf8
+
+#Definição do Viewpoint
+Viewpoint {
+
+	description	"Cima"
+	position 0 150 0
+	orientation	1 0 0 -1.5708
+}
+
+#Definição do Gramado
+Group {
+
+	children [
+	
+		DEF	Campo Transform {
+			
+			children Shape {
+			
+				geometry Box {size 90 0.005 60}
+				appearance Appearance {
+				
+					texture ImageTexture {url "I:\FLP\Felipe\UFOPA\5º Semestre\Computação Gráfica\Estádio\Git\Textures\campo.jpg"}
+
+				}
+
+			}
+
+		}
+
+	]
+
+}
