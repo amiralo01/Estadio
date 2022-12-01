@@ -4,11 +4,11 @@
 Viewpoint {
 
 	description	"Cima"
-	position 0 150 0
+	position 0 200 0
 	orientation	1 0 0 -1.5708
 }
 
-#Definição do Gramado
+#Criação do Gramado
 Group {
 
 	children [
@@ -23,6 +23,71 @@ Group {
 					texture ImageTexture {url "I:\FLP\Felipe\UFOPA\5º Semestre\Computação Gráfica\Estádio\Git\Textures\campo.jpg"}
 
 				}
+
+			}
+
+		}
+
+	]
+
+}
+
+#Criação das arquibancadas
+Group {
+
+	children [
+	
+		#Cima 1º
+		Transform {
+
+			translation	0 10.5 -40.5
+			rotation 1 0 0 0.7853	
+		
+			children Shape {
+			
+				geometry Box {size 80 0.005 30}
+
+			}
+
+		}
+
+		#Baixo 1º
+		Transform {
+
+			translation	0 10.5 40.5
+			rotation 1 0 0 -0.7853	
+		
+			children Shape {
+			
+				geometry Box {size 80 0.005 30}
+
+			}
+
+		}
+
+		#Esquerda 1º
+		Transform {
+
+			translation -55.5 10.5 0
+			rotation 0 0 1 -0.7853	
+		
+			children Shape {
+			
+				geometry Box {size 30 0.005 50}
+
+			}
+
+		}
+
+		#Direita 1º
+		Transform {
+
+			translation 55.5 10.5 0
+			rotation 0 0 1 0.7853	
+		
+			children Shape {
+			
+				geometry Box {size 30 0.005 50}
 
 			}
 
